@@ -13,6 +13,7 @@ on:
     # ignore changes to docs
     paths-ignore:
       - ./docs/*
+  workflow_dispatch
 
 jobs:
   build-code:
