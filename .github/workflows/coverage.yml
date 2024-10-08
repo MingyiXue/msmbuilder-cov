@@ -60,7 +60,7 @@ jobs:
         pip install pytest
         pip install pytest-cov
         mkdir ../../pkgs
-        cp -r msmbuilder/tests pkgs/
+        cp -r msmbuilder/tests ../../pkgs/
         cd ../../pkgs
         python tests/data_init.py
         pytest tests --cov=msmbuilder --cov-report=xml:coverage.xml
