@@ -59,9 +59,9 @@ jobs:
         conda install -yq numdifftools hmmlearn
         pip install pytest
         pip install pytest-cov
-        mkdir pkgs
+        mkdir ../../pkgs
         cp -r msmbuilder/tests pkgs/
-        cd pkgs
+        cd ../../pkgs
         python tests/data_init.py
         pytest tests --cov=msmbuilder --cov-report=xml:coverage.xml
     - name: Upload coverage reports to Codecov
